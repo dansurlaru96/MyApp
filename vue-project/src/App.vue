@@ -1,9 +1,13 @@
 <script setup>
 import IncDecApp from './components/IncDecApp.vue'
+import InputAny from './components/InputAny.vue'
 </script>
 
 <template>
-  <IncDecApp />
+  <div>
+    <IncDecApp />
+    <InputAny />
+  </div>
 </template>
 
 <style>
@@ -14,5 +18,6 @@ import IncDecApp from './components/IncDecApp.vue'
 }
 html, body {
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 </style>

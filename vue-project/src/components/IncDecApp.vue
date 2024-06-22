@@ -33,10 +33,7 @@ function resetCount() {
     <div>
         <h1 class="myTitle">Adauga sau scade valoarea</h1>
         <p class="subTitle">Primul meu component in VueJS</p>
-        <transition>
-            <h1 class="myValue">{{ count }}</h1>
-        </transition>
-        
+        <h1 class="myValue">{{ count }}</h1>
     </div>
     <div class="btnContainer">
         <button class="btnStyle" @click="count--">Scade</button>
@@ -52,7 +49,7 @@ function resetCount() {
     justify-content: center;
     text-align: center;
     background-color: #dedbdb;
-    border: 3px solid #979797;
+    border-bottom: 3px solid #979797;
 }
 .myTitle {
     font-size: 30px;
