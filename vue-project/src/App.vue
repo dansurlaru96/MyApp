@@ -1,14 +1,18 @@
 <script setup>
-import { ref } from 'vue'
-const count = ref(0)
+import IncDecApp from './components/IncDecApp.vue'
 </script>
 
 <template>
-  <button @click="count++">Count is: {{ count }}</button>
+  <IncDecApp />
 </template>
 
-<style scoped>
-button {
-  font-weight: bold;
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
