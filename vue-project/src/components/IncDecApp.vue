@@ -26,7 +26,6 @@ let count = ref(0);
 function resetCount() {
     count.value = 0;
 }
-const show = ref(true)
 </script>
 
 <template>
@@ -35,7 +34,7 @@ const show = ref(true)
         <h1 class="myTitle">Adauga sau scade valoarea</h1>
         <p class="subTitle">Primul meu component in VueJS</p>
         <transition>
-            <h1 v-if="show" class="myValue">{{ count }}</h1>
+            <h1 class="myValue">{{ count }}</h1>
         </transition>
         
     </div>
@@ -86,17 +85,5 @@ const show = ref(true)
 }
 .btnStyle:hover {
     background-color: #e17204;
-}
-
-/* Animations */
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
 }
 </style>
